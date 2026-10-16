@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service_description">Napauta esteettömyyspainiketta vaihtaaksesi himmennetyn näytön ja normaalin kirkkauden välillä. Säädä himmennyksen määrä Dimmer-sovelluksessa. Dimmer ei lue näytön sisältöä.</string>
+    <string name="open_settings">Avaa esteettömyysasetukset</string>
+    <string name="setup_heading">Käyttöönotto</string>
+    <string name="setup_step1">Napauta alla olevaa painiketta, valitse Dimmer ja laita se päälle.</string>
+    <string name="setup_step2">Laita samalla sivulla päälle Dimmer -pikanäppäin ja valitse Esteettömyyspainike.</string>
+    <string name="setup_usage">Napauta esteettömyyspainiketta vaihtaaksesi himmennetyn ja normaalin näkymän välillä. Säädä himmennyksen määrä alla.</string>
+    <string name="restricted_settings">Jos Dimmer näkyy harmaana tai näet ilmoituksen \"Rajoitettu asetus\" (Android 13 ja uudemmat): avaa Asetukset > Sovellukset > Dimmer, napauta oikean yläkulman kolmen pisteen valikkoa ja valitse Salli rajoitetut asetukset. Laita sitten Dimmer päälle uudelleen. Vaihtoehto näkyy valikossa vasta, kun olet kerran yrittänyt laittaa Dimmerin päälle.</string>
+    <string name="dim_heading">Himmennys</string>
+    <string name="dim_value">%1$d %%</string>
+    <string name="version">Versio %1$s</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dimmer</string>
+    <string name="service_description">Tap the accessibility button to switch between a dimmed screen and normal brightness. Set the amount of dimming in the Dimmer app. Dimmer does not read screen content.</string>
+    <string name="open_settings">Open accessibility settings</string>
+    <string name="setup_heading">Setup</string>
+    <string name="setup_step1">Tap the button below, choose Dimmer and turn it on.</string>
+    <string name="setup_step2">On the same screen, turn on the Dimmer shortcut and choose Accessibility button.</string>
+    <string name="setup_usage">Tap the accessibility button to switch between dimmed and normal. Set the amount of dimming below.</string>
+    <string name="restricted_settings">If Dimmer is greyed out or shows \"Restricted setting\" (Android 13 and newer): open Settings > Apps > Dimmer, tap the three-dot menu at the top right and choose Allow restricted settings. Then turn Dimmer on again. The menu option only appears after you have tried to turn Dimmer on once.</string>
+    <string name="dim_heading">Dimming</string>
+    <string name="dim_value">%1$d%%</string>
+    <string name="version">Version %1$s</string>
+    <string name="language_fi" translatable="false">FI</string>
+    <string name="language_en" translatable="false">EN</string>
+</resources>

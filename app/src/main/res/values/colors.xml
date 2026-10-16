@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#FF263238</color>
+
+    <!-- Setup screen palette (night versions in values-night/colors.xml) -->
+    <color name="page">#FFF3F5F7</color>
+    <color name="card">#FFFFFFFF</color>
+    <color name="card_stroke">#FFE2E7EB</color>
+    <color name="info_card">#FFE9EEF2</color>
+    <color name="text_primary">#FF182026</color>
+    <color name="text_secondary">#FF5A6670</color>
+    <color name="accent">#FFF2A900</color>
+    <color name="on_accent">#FF1F1600</color>
+    <color name="accent_text">#FF8F5C00</color>
+    <color name="accent_soft">#FFFFF0C7</color>
+    <color name="track">#FFDCE2E7</color>
+</resources>

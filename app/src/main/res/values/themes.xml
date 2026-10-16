@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- No action bar: the screen has its own header. -->
+    <style name="Base.Theme.Dimmer" parent="@android:style/Theme.DeviceDefault.DayNight">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/page</item>
+        <item name="android:statusBarColor">@color/page</item>
+        <item name="android:navigationBarColor">@color/page</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <!-- Dark status and navigation bar icons on the light page; values-night keeps them light. -->
+    <style name="Theme.Dimmer" parent="Base.Theme.Dimmer">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

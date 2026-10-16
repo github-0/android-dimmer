@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@drawable/bg_card</item>
+    </style>
+
+    <style name="SectionHeading">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/accent_text</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Body">
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="StepBadge">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:background">@drawable/bg_step</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/accent_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="LanguageOption">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">56dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:background">@drawable/bg_toggle_option</item>
+        <item name="android:button">@null</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/toggle_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

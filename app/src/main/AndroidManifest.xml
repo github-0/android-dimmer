@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        PERMISSIONS: none.
+        This app has no <uses-permission> entries, so it requests nothing at install time
+        or at runtime (no internet, storage, overlay or other permissions).
+
+        The only thing the user grants is turning on the Dimmer accessibility service.
+        That switch shows Android's "Allow Dimmer to have full control of your device?"
+        dialog. See the note on DimService below for what that dialog does and doesn't mean.
+    -->
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Dimmer">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            Accessibility service: provides the accessibility button and draws the dim overlay.
+
+            BIND_ACCESSIBILITY_SERVICE below is not a permission Dimmer holds. It restricts
+            who may bind to this service to the system only.
+
+            The "full control" dialog when enabling it:
+            The texts "View and control screen" and "View and perform actions" are fixed.
+            Android 11 Settings shows the same dialog for every accessibility service,
+            whatever the service asks for, so the app cannot change or narrow it.
+
+            What Dimmer actually uses (configured in res/xml/dim_service.xml):
+              - flagRequestAccessibilityButton: receive taps on the accessibility button.
+              - An accessibility overlay window (TYPE_ACCESSIBILITY_OVERLAY) for the dim layer,
+                which lets touches pass through to the apps underneath.
+
+            What Dimmer does not request:
+              - canRetrieveWindowContent: it cannot read what is on screen.
+              - accessibilityEventTypes: it subscribes to no events, so it doesn't see taps,
+                typing or app switches.
+              - canPerformGestures: it cannot tap or swipe on the user's behalf.
+        -->
+        <service
+            android:name=".DimService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/dim_service" />
+        </service>
+    </application>
+</manifest>

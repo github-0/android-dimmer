@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="28dp"
+        android:paddingBottom="16dp">
+
+        <!-- Header -->
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:importantForAccessibility="no"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp" />
+
+        <!-- Setup -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/SectionHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setup_heading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/StepBadge"
+                    android:text="1" />
+
+                <TextView
+                    style="@style/Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:text="@string/setup_step1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/StepBadge"
+                    android:text="2" />
+
+                <TextView
+                    style="@style/Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:text="@string/setup_step2" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/setup_usage"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/open_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_button"
+                android:fontFamily="sans-serif-medium"
+                android:minHeight="52dp"
+                android:stateListAnimator="@null"
+                android:text="@string/open_settings"
+                android:textAllCaps="false"
+                android:textColor="@color/on_accent"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Restricted setting note -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_info_card"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="1dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_info" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/restricted_settings"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Dimming -->
+        <LinearLayout style="@style/Card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SectionHeading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dim_heading" />
+
+                <TextView
+                    android:id="@+id/dim_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/text_primary"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/dim_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:max="95"
+                android:maxHeight="8dp"
+                android:min="30"
+                android:minHeight="8dp"
+                android:paddingVertical="10dp"
+                android:progressDrawable="@drawable/seek_track"
+                android:splitTrack="false"
+                android:thumb="@drawable/seek_thumb" />
+        </LinearLayout>
+
+        <!-- Pushes the version and language toggle to the bottom of the screen when there's room. -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="4dp">
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+
+            <RadioGroup
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_toggle"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <RadioButton
+                    android:id="@+id/language_fi"
+                    style="@style/LanguageOption"
+                    android:text="@string/language_fi" />
+
+                <RadioButton
+                    android:id="@+id/language_en"
+                    style="@style/LanguageOption"
+                    android:text="@string/language_en" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page">#FF101417</color>
+    <color name="card">#FF1A2126</color>
+    <color name="card_stroke">#FF253038</color>
+    <color name="info_card">#FF161D22</color>
+    <color name="text_primary">#FFE8ECEF</color>
+    <color name="text_secondary">#FF9AA6AF</color>
+    <color name="accent">#FFFFB938</color>
+    <color name="on_accent">#FF1F1600</color>
+    <color name="accent_text">#FFFFC966</color>
+    <color name="accent_soft">#FF3A2E12</color>
+    <color name="track">#FF2C3740</color>
+</resources>
