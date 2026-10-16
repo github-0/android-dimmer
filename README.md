@@ -2,7 +2,7 @@
 
 A minimal Android app that dims the whole screen by 80% (adjustable) and back with one tap. Useful when sensitive content is briefly on screen in public or when you don't want to disturb others in a low light environment. You can toggle it with the **accessibility button**.
 
-Download the APK from the releases page, or build it yourself.
+[Download](https://github.com/github-0/android-dimmer/releases/latest/download/app-release.apk) the APK from the releases page, or build it yourself.
 
 <table>
 <thead>
